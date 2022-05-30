@@ -1,0 +1,325 @@
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: auto;
+    /* background: rgb(255, 245, 245); */
+    background: rgb(228, 228, 228);
+    overflow-x: hidden;
+}
+
+/* Tytuł i menu */
+
+header {
+    display: flex;
+}
+
+.logo-div {
+    display: flex;
+    width: 50vw;
+    height: 22vh;
+    background: rgb(124, 124, 124);
+}
+
+.logo-div img {
+    width: 10vw;
+    height: auto;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+.logo-div p {
+    text-shadow: 4px 3px 0 #575757;
+    margin-left: 10px;
+    color: white;
+    font-size: 40px;
+}
+
+.menu-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50vw;
+    height: 22vh;
+    background: rgb(124, 124, 124); 
+}
+
+.menu-div ul {
+    display: flex;
+    justify-content:space-around;
+    border-bottom: 2px solid white;
+    padding: 0;
+    margin: 0;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+    list-style-type: none;
+}
+
+.menu-div li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+.menu-div li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-shadow: 1px 2px 0 #575757;
+    transition: 0.5s;
+}
+
+.menu-div li a:hover {
+    color: rgb(247, 120, 120);
+    transition: 0.5s;
+}
+
+/* terminarz */
+
+section {
+    width: 100vw;
+    height: auto;
+    background: rgb(228, 228, 228);
+}
+
+._3 {
+    display: flex;
+    justify-content: center;
+}
+
+.bg-terminarz {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding: 20px;
+    width: 80vw;
+    height: auto;
+    background: rgb(243, 243, 243);
+    -webkit-box-shadow: 0px 6px 33px 0px rgba(198, 198, 198, 1);
+    -moz-box-shadow: 0px 6px 33px 0px rgba(198, 198, 198, 1);
+    box-shadow: 0px 6px 33px 0px rgba(198, 198, 198, 1);
+}
+
+.terminarz-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+    margin-top: 10px;
+    /* border-radius: 20px 20px 5px 5px;
+    border: 5px solid rgb(71, 71, 71);
+    background: rgb(139, 139, 139); */
+}
+
+.terminarz-div h1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+    color: black;
+}
+
+.terminarz-div .line-bottom {
+    display: flex;
+    justify-content: center;
+    width: 5px;
+    height: 40px;
+    background: rgb(80, 0, 0);
+    transform: rotate(90deg);
+}
+
+._1 {
+    display: flex;
+    justify-content: center;
+}
+
+.h1-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    height: 10vh;
+    margin-top: 10px;
+    background: rgb(228, 86, 86);
+    border-radius: 20px 5px;
+}
+
+h1 {
+    padding: 20px;
+    margin: 0;
+    color: white;
+}
+
+._2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* #id-2 {
+    margin-bottom: 80px;
+} */
+
+.left-block-match, .right-block-match {
+    width: 25vw;
+    height: 45vh;
+    margin-top: 20px;
+    background: rgb(182, 34, 34);
+    border-radius: 30px;
+}
+
+.left-block-match p, .right-block-match p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+}
+
+.left-wynik-div, .right-wynik-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wynik, .wynik {
+    width: 23vw;
+    height: 20vh;
+    background: rgb(238, 238, 238);
+    border-radius: 30px;
+}
+
+.wynik {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wynik p {
+    color: black;
+    font-size: 40px;
+}
+
+.wynik-name p {
+    font-size: 20px;
+    padding: 5px;
+}
+
+#koniec_sezonu {
+    font-size: 30px;
+}
+
+/* responsywność */
+
+@media screen and (max-width: 1100px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-div, .menu-div {
+        width: 100vw;
+    }
+
+    .logo-div {
+        display: flex;
+        justify-content: center;
+        height: 16vh;
+        border-bottom: 1px solid white;
+    }
+
+    .logo-div img {
+        width: 100px;
+        height: 100px;
+        margin-left: 0;
+    }
+
+    .logo-div p {
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .menu-div {
+        height: 200px;
+    }
+
+    .menu-div ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        border-bottom: 0;
+    }
+
+    .menu-div li {
+        display: flex;
+        flex-direction: row;
+        border-right: 0;
+        border-left: 0;
+        margin-bottom: 5px;
+    }
+
+    #stadion-li {
+        margin-top: 25px;
+    }
+
+    #galeria-id {
+        margin-bottom: 100px;
+    }
+
+    /* wyniki */
+
+    .h1-block {
+        width: 200px;
+        height: 50px;
+    }
+
+    .h1-block h1 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    ._2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-block-match, .right-block-match {
+        width: 80vw;
+        height: 300px;
+    }
+
+    .left-block-match p, .right-block-match p {
+        font-size: 20px;
+    }
+
+    .wynik {
+        width: 75vw;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .wynik p {
+        font-size: 25px;
+    }
+
+    .wynik img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .wynik-name p {
+        font-size: 15px;
+    }
+}

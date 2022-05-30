@@ -1,0 +1,654 @@
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: auto;
+    /* background: rgb(255, 245, 245); */
+    background: rgb(228, 228, 228);
+    overflow-x: hidden;
+}
+
+/* Tytuł i menu */
+
+header {
+    display: flex;
+}
+
+.logo-div {
+    display: flex;
+    width: 50vw;
+    height: 22vh;
+    background: rgb(124, 124, 124);
+}
+
+.logo-div img {
+    width: 10vw;
+    height: auto;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+.logo-div p {
+    text-shadow: 4px 3px 0 #575757;
+    margin-left: 10px;
+    color: white;
+    font-size: 40px;
+}
+
+.menu-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50vw;
+    height: 22vh;
+    background: rgb(124, 124, 124); 
+}
+
+.menu-div ul {
+    display: flex;
+    justify-content:space-around;
+    border-bottom: 2px solid white;
+    padding: 0;
+    margin: 0;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+    list-style-type: none;
+}
+
+.menu-div li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+.menu-div li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-shadow: 1px 2px 0 #575757;
+    transition: 0.5s;
+}
+
+.menu-div li a:hover {
+    color: rgb(247, 120, 120);
+    transition: 0.5s;
+}
+
+/* dwa zdjęcia na stronie głównej */
+
+main {
+    display: flex;
+}
+
+.left-block {
+    width: 50vw;
+    height: 60vh;
+    -webkit-box-shadow: 0px 2px 12px -1px rgba(62, 62, 64, 1);
+    -moz-box-shadow: 0px 2px 12px -1px rgba(62, 62, 64, 1);
+    box-shadow: 0px 2px 12px -1px rgba(62, 62, 64, 1);
+    overflow: hidden;
+}
+
+.left-block img {
+    width: 50vw;
+    height: 60vh;
+    transition-duration: 2s;
+}
+
+.left-block img:hover {
+    overflow: hidden;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    z-index: 0;
+}
+
+.right-block {
+    width: 50vw;
+    height: 60vh;
+    -webkit-box-shadow: 0px 2px 12px -1px rgba(62, 62, 64, 1);
+    -moz-box-shadow: 0px 2px 12px -1px rgba(62, 62, 64, 1);
+    box-shadow: 0px 2px 12px -1px rgba(62, 62, 64, 1);
+    overflow: hidden;
+}
+
+.right-block img {
+    width: 50vw;
+    height: 60vh;
+    transition-duration: 2s;
+}
+
+.right-block img:hover {
+    overflow: hidden;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    z-index: 0;
+}
+
+/* terminarz */
+
+section {
+    width: 100vw;
+    height: auto;
+    background: rgb(228, 228, 228);
+}
+
+._3 {
+    display: flex;
+    justify-content: center;
+}
+
+.bg-terminarz {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding: 20px;
+    width: 80vw;
+    height: auto;
+    background: rgb(243, 243, 243);
+    -webkit-box-shadow: 0px 6px 33px 0px rgba(198, 198, 198, 1);
+    -moz-box-shadow: 0px 6px 33px 0px rgba(198, 198, 198, 1);
+    box-shadow: 0px 6px 33px 0px rgba(198, 198, 198, 1);
+}
+
+.terminarz-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+    margin-top: 10px;
+    /* border-radius: 20px 20px 5px 5px;
+    border: 5px solid rgb(71, 71, 71);
+    background: rgb(139, 139, 139); */
+}
+
+.terminarz-div h1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+    color: black;
+}
+
+.terminarz-div .line-bottom {
+    display: flex;
+    justify-content: center;
+    width: 5px;
+    height: 40px;
+    background: rgb(80, 0, 0);
+    transform: rotate(90deg);
+}
+
+._1 {
+    display: flex;
+    justify-content: center;
+}
+
+.h1-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    height: 10vh;
+    margin-top: 10px;
+    background: rgb(228, 86, 86);
+    border-radius: 20px 5px;
+}
+
+h1 {
+    padding: 20px;
+    margin: 0;
+    color: white;
+}
+
+._2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* #id-2 {
+    margin-bottom: 80px;
+} */
+
+.left-block-match, .right-block-match {
+    width: 25vw;
+    height: 45vh;
+    margin-top: 20px;
+    background: rgb(182, 34, 34);
+    border-radius: 30px;
+}
+
+.left-block-match p, .right-block-match p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+}
+
+.left-wynik-div, .right-wynik-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wynik, .wynik {
+    width: 23vw;
+    height: 20vh;
+    background: rgb(238, 238, 238);
+    border-radius: 30px;
+}
+
+.wynik {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wynik p {
+    color: black;
+    font-size: 40px;
+}
+
+.wynik-name p {
+    font-size: 20px;
+    padding: 5px;
+}
+
+#koniec_sezonu {
+    font-size: 30px;
+}
+
+/* kwadrat na rogach */
+
+.main-line-div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.line-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.line-top {
+    position: relative;
+    top: -20px;
+    left: 50px;
+    width: 100px;
+    height: 20px;
+    background: rgb(110, 128, 104);
+}
+
+.line-left {
+    position: relative;
+    left: 10px;
+    width: 100px;
+    height: 20px;
+    background: rgb(110, 128, 104);
+    transform: rotate(90deg);
+}
+
+.line-top-2 {
+    position: relative;
+    top: 40px;
+    right: 40px;
+    width: 100px;
+    height: 20px;
+    background: rgb(110, 128, 104);
+}
+
+.line-left-2 {
+    position: relative;
+    top: -20px;
+    width: 100px;
+    height: 20px;
+    background: rgb(110, 128, 104);
+    transform: rotate(90deg);
+}
+
+/* Co u nas słychać */
+
+.h1-block-2-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+    margin-bottom: 20px;
+}
+
+.h1-block-2-div .line-1 {
+    position: relative;
+    top: -15px;
+    left: 20px;
+    background: rgb(207, 83, 83);
+    width: 20px;
+    height: 70px;
+    transform: rotate(35deg);
+}
+
+.h1-block-2-div .line-2 {
+    position: relative;
+    top: -15px;
+    left: -20px;
+    background: rgb(207, 83, 83);
+    width: 20px;
+    height: 70px;
+    transform: rotate(-35deg);
+}
+
+.h1-block-2 {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    /* background: rgb(161, 157, 157); */
+    background: rgb(236, 228, 104);
+    border-radius: 10px 10px 0 0;
+    -webkit-box-shadow: 0px 6px 33px 0px rgba(198, 198, 198, 1);
+    -moz-box-shadow: 0px 6px 33px 0px rgba(198, 198, 198, 1);
+    box-shadow: 0px 6px 33px 0px rgba(198, 198, 198, 1);
+}
+
+.h1-block-2 h1 {
+    color: black;
+}
+
+.main-block-3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-block-3 .block-1 {
+    width: 300px;
+    height: 400px;
+    background: rgb(170, 172, 156);
+    -webkit-box-shadow: 0px 6px 33px 0px rgba(198, 198, 198, 1);
+    -moz-box-shadow: 0px 6px 33px 0px rgba(198, 198, 198, 1);
+    box-shadow: 0px 6px 33px 0px rgba(198, 198, 198, 1);
+}
+
+.block-1 img {
+    width: auto;
+    height: 193px;
+    padding: 5px;
+    border-radius: 10px 10px;
+}
+
+.block-1 h1 {
+    position: relative;
+    top: -310px;
+    left: 100px;
+    width: 100px;
+    color: black;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.block-1 p {
+    position: relative;
+    top: -335px;
+    left: 20px;
+}
+
+.block-1 .line-block-3 {
+    position: relative;
+    top: -160px;
+    left: 120px;
+    width: 60px;
+    height: 290px;
+    background: rgb(170, 172, 156);
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    transform: rotate(80deg);
+    z-index: 0;
+}
+
+/* responsywność */
+
+@media screen and (max-width: 1100px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-div, .menu-div {
+        width: 100vw;
+    }
+
+    .logo-div {
+        display: flex;
+        justify-content: center;
+        height: 16vh;
+        border-bottom: 1px solid white;
+    }
+
+    .logo-div img {
+        width: 100px;
+        height: 100px;
+        margin-left: 0;
+    }
+
+    .logo-div p {
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .menu-div {
+        height: 200px;
+    }
+
+    .menu-div ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        border-bottom: 0;
+    }
+
+    .menu-div li {
+        display: flex;
+        flex-direction: row;
+        border-right: 0;
+        border-left: 0;
+        margin-bottom: 5px;
+    }
+
+    #stadion-li {
+        margin-top: 25px;
+    }
+
+    #galeria-id {
+        margin-bottom: 100px;
+    }
+
+    /* dwa główne zdjęcia */
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-block, .right-block {
+        width: 100vw;
+        height: 250px;
+    }
+
+    .left-block img, .right-block img {
+        width: 100vw;
+        height: 250px;
+    }
+
+    /* terminarz */
+
+    .h1-block {
+        width: 200px;
+        height: 50px;
+    }
+
+    .h1-block h1 {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    ._2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-block-match, .right-block-match {
+        width: 80vw;
+        height: 300px;
+    }
+
+    .left-block-match p, .right-block-match p {
+        font-size: 20px;
+    }
+
+    .wynik {
+        width: 75vw;
+    }
+
+    #koniec_sezonu {
+        font-size: 20px;
+    }
+
+    /* co u nas słychać */
+
+    .h1-block-2 {
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        height: 65px;
+    }
+    
+    .h1-block-2 h1 {
+        color: black;
+        font-size: 23px;
+    }
+
+    .main-block-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block-1 {
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .line-top {
+        display: none;
+    }
+
+    .line-left {
+        display: none;
+    }
+
+    .line-top-2 {
+        display: none;
+    }
+
+    .line-left-2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .wynik p {
+        font-size: 25px;
+    }
+
+    .wynik img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .wynik-name p {
+        font-size: 15px;
+    }
+}
+
+/* 2 */
+
+/* header {
+    display: flex;
+    justify-content: center;
+}
+
+.l-baner {
+    width: 25vw;
+    height: 45vh;
+    background-color: rgb(231, 134, 134);
+    background: rgb(227,177,177);
+    background: linear-gradient(90deg, rgba(227,177,177,1) 0%, rgb(226, 155, 155) 35%, rgba(232,124,124,1) 100%);
+    border-right: 6px solid rgb(0, 0, 0);
+}
+
+.r-baner {
+    width: 25vw;
+    height: 45vh;
+    background-color: rgb(231, 134, 134);
+    background: rgb(227,177,177);
+    background: linear-gradient(275deg, rgba(227,177,177,1) 0%, rgb(226, 155, 155) 35%, rgba(232,124,124,1) 100%);
+    border-left: 6px solid black;
+}
+
+header img {
+    height: 45vh;
+}
+
+.black-line {
+    width: 100vw;
+    height: 0.5vh;
+    background: rgb(0, 0, 0);
+}
+
+menu {
+    margin: 0;
+    padding: 0;
+}
+
+menu ul{
+    display: flex;
+    justify-content:space-around;
+    background-color: rgb(180, 67, 67);
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+menu li {
+    background-color: rgb(185, 19, 19);
+    padding: 1% 5%;
+    transition: 0.5s;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+menu li:hover {
+    background: rgb(71, 0, 0);
+    border-radius: 3%;
+    transition: 0.5s;
+}
+
+menu li a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+} */

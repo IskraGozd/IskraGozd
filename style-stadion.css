@@ -1,0 +1,226 @@
+* {
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: auto;
+    /* background: rgb(255, 245, 245); */
+    background: rgb(228, 228, 228);
+    overflow-x: hidden;
+}
+
+/* Tytuł i menu */
+
+header {
+    display: flex;
+}
+
+.logo-div {
+    display: flex;
+    width: 50vw;
+    height: 22vh;
+    background: rgb(124, 124, 124);
+}
+
+.logo-div img {
+    width: 10vw;
+    height: auto;
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+.logo-div p {
+    text-shadow: 4px 3px 0 #575757;
+    margin-left: 10px;
+    color: white;
+    font-size: 40px;
+}
+
+.menu-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50vw;
+    height: 22vh;
+    background: rgb(124, 124, 124); 
+}
+
+.menu-div ul {
+    display: flex;
+    justify-content:space-around;
+    border-bottom: 2px solid white;
+    padding: 0;
+    margin: 0;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+    list-style-type: none;
+}
+
+.menu-div li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+.menu-div li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-shadow: 1px 2px 0 #575757;
+    transition: 0.5s;
+}
+
+.menu-div li a:hover {
+    color: rgb(247, 120, 120);
+    transition: 0.5s;
+}
+
+/* nagłówek */
+
+._3 {
+    display: flex;
+    justify-content: center;
+}
+
+.terminarz-div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+    margin-top: 10px;
+    /* border-radius: 20px 20px 5px 5px;
+    border: 5px solid rgb(71, 71, 71);
+    background: rgb(139, 139, 139); */
+}
+
+.terminarz-div h1 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    color: black;
+}
+
+.terminarz-div .line-bottom {
+    display: flex;
+    justify-content: center;
+    width: 5px;
+    height: 40px;
+    background: rgb(80, 0, 0);
+    transform: rotate(90deg);
+}
+
+/* tabela wymiarów */
+
+table, tr, td, th {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+table {
+    padding: 1px;
+    background: rgb(230, 204, 204);
+    border-radius: 10px 20px;
+}
+
+td {
+    width: 230px;
+    height: 50px;
+    text-align: center;
+    background: rgb(255, 97, 97);
+    border-radius: 10px 10px;
+}
+
+th {
+    background: rgb(238, 28, 28);
+    border-radius: 10px 0 0 10px;
+}
+
+.table-bg {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    background: rgb(243, 243, 243);
+    -webkit-box-shadow: 0px 6px 33px 0px rgba(198, 198, 198, 1);
+    -moz-box-shadow: 0px 6px 33px 0px rgba(198, 198, 198, 1);
+    box-shadow: 0px 6px 33px 0px rgba(198, 198, 198, 1);
+}
+
+.table-div {
+    display: flex;
+    justify-content: center;
+    padding: 13px;
+}
+
+/* responsywność */
+
+@media screen and (max-width: 1100px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-div, .menu-div {
+        width: 100vw;
+    }
+
+    .logo-div {
+        display: flex;
+        justify-content: center;
+        height: 16vh;
+        border-bottom: 1px solid white;
+    }
+
+    .logo-div img {
+        width: 100px;
+        height: 100px;
+        margin-left: 0;
+    }
+
+    .logo-div p {
+        font-size: 30px;
+        margin-left: 0;
+    }
+
+    .menu-div {
+        height: 200px;
+    }
+
+    .menu-div ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        border-bottom: 0;
+    }
+
+    .menu-div li {
+        display: flex;
+        flex-direction: row;
+        border-right: 0;
+        border-left: 0;
+        margin-bottom: 5px;
+    }
+
+    #stadion-li {
+        margin-top: 25px;
+    }
+
+    #galeria-id {
+        margin-bottom: 100px;
+    }
+
+    .table-bg {
+        width: 300px;
+    }
+}
